@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b9591243-56db-4c22-9a3b-6ff0bd7adf04" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/arraylists/ArrayLists.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/collections/list/Arraylists.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/collections/list/LinkedLists.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/collections/list/Vectors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/collections/maps/Hashmaps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/collections/maps/Hashtables.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/collections/maps/Treemaps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/collections/queue/PriorityQueues.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/collections/set/Hashsets.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/collections/set/LihkedHashSets.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/collections/set/Treesets.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/exceptions/CustomExceptions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/exceptions/ExceptionHandling1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/exceptions/ExceptionHandling2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/externalizablee/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/externalizablee/Stud.ser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/filehandling/CreateFiles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/filehandling/FileRead.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/filehandling/FileWrite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/filehandling/names.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/multithreading/ExecutorFrameworks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/multithreading/FairnessLocks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/multithreading/Locks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/multithreading/Synchronization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/multithreading/TMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/multithreading/ThreadsRunnable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/multithreading/ThreadsThreadClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/oops/abstraction/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/oops/abstraction/Main2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/oops/encapsulation/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/oops/encapsulation/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/oops/encapsulation/MainSchool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/oops/encapsulation/School.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/oops/finalKeyword/FinalKeyword.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/oops/inheritance/HierarchicalInheritance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/oops/inheritance/HybridInheritance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/oops/inheritance/MultilevelInheritance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/oops/inheritance/MultipleInheritance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/oops/inheritance/SingleLevelInheritance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/oops/polymorphism/MethodOverloading.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/oops/polymorphism/MethodOverriding.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/serialization/Cars.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/serialization/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/serialization/cars.ser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/strings/Strings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/strings/UsingStringBuffer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/strings/UsingStringBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/threads/ExtendingThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ivoyant/java/threads/ImplementRunnable.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2uTiEUJ6C1IH2RFNDImXBgMIH0s" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "feature/week1",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b9591243-56db-4c22-9a3b-6ff0bd7adf04" name="Changes" comment="" />
+      <created>1742278853461</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1742278853461</updated>
+    </task>
+    <servers />
+  </component>
+</project>
