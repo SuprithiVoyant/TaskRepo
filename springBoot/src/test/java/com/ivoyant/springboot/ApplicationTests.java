@@ -1,4 +1,4 @@
-package com.ivoyant.springBoot;
+package com.ivoyant.springboot;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

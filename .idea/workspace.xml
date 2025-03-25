@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c49a494-1017-4b92-952b-ec82ee7eab7c" name="Changes" comment="" />
+    <list default="true" id="7c49a494-1017-4b92-952b-ec82ee7eab7c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springBoot/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springBoot/controller/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/controller/MovieController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springBoot/dto/Movies.java" beforeDir="false" afterPath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/dto/Movies.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springBoot/repository/MovieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/repository/MovieRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springBoot/service/MovieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/service/MovieService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springBoot/src/test/java/com/ivoyant/springBoot/ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/springBoot/src/test/java/com/ivoyant/springboot/ApplicationTests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,6 +44,7 @@
   "keyToString": {
     "Application.Application.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "feature/week3",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
@@ -48,11 +57,11 @@
 }]]></component>
   <component name="RunManager">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ivoyant.springBoot.Application" />
+      <option name="MAIN_CLASS_NAME" value="com.ivoyant.springboot.Application" />
       <module name="springBoot" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ivoyant.springBoot.*" />
+          <option name="PATTERN" value="com.ivoyant.springboot.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>

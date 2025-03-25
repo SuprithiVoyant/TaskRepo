@@ -1,4 +1,4 @@
-package com.ivoyant.springBoot;
+package com.ivoyant.springboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
