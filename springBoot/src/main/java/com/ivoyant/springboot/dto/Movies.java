@@ -5,6 +5,7 @@ import lombok.Data;
 
 @Entity
 @Data
+@Table(name = "movie_data")
 public class Movies {
 
     @Id
@@ -13,8 +14,8 @@ public class Movies {
     @Column(unique = true)
     private String name;
     private int year;
+    private int rating;
     @Column(length = 1000)
     private String description;
-    private int rating;
 
 }

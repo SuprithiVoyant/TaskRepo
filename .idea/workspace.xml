@@ -6,12 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="7c49a494-1017-4b92-952b-ec82ee7eab7c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springBoot/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springBoot/controller/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/controller/MovieController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springBoot/dto/Movies.java" beforeDir="false" afterPath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/dto/Movies.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springBoot/repository/MovieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/repository/MovieRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springBoot/service/MovieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/service/MovieService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springBoot/src/test/java/com/ivoyant/springBoot/ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/springBoot/src/test/java/com/ivoyant/springboot/ApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springBoot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springBoot/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/controller/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/controller/MovieController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/dto/Movies.java" beforeDir="false" afterPath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/dto/Movies.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/repository/MovieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/repository/MovieRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/service/MovieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/service/MovieService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springBoot/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/springBoot/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,21 +41,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Application.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/week3",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/SUPRITH/intellij/springBoot",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "project.propCompiler"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Application.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/week3&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/SUPRITH/intellij/springBoot&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ivoyant.springboot.Application" />

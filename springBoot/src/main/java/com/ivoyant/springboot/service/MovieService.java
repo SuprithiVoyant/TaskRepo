@@ -2,6 +2,7 @@ package com.ivoyant.springboot.service;
 
 import com.ivoyant.springboot.dto.Movies;
 import com.ivoyant.springboot.repository.MovieRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +14,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Optional;
 
+@Slf4j
 @Service
 public class MovieService {
 
@@ -28,8 +30,7 @@ public class MovieService {
             map.put("Movies","Nothing to show");
             return new ResponseEntity<>(map, HttpStatus.NOT_FOUND);
         }else{
-            map.put("Movies",movie);
-            return new ResponseEntity<>(map, HttpStatus.FOUND);
+            return new ResponseEntity<>(movie, HttpStatus.FOUND);
         }
     }
 
@@ -45,9 +46,8 @@ public class MovieService {
         Optional<Movies> movie = repository.findById(id);
         HashMap<String, Object> map = new HashMap<>();
         if(movie.isPresent()){
-            map.put("Movie",movie);
             logger.info("Movie found");
-            return new ResponseEntity<>(map, HttpStatus.CREATED);
+            return new ResponseEntity<>(movie, HttpStatus.CREATED);
         }else{
             map.put("Movie", "Not Found");
             return new ResponseEntity<>(map, HttpStatus.NOT_FOUND);
@@ -55,11 +55,11 @@ public class MovieService {
     }
 
     public ResponseEntity<Object> fetchByName(String name) {
-        Optional<Movies> movie = repository.findByName(name);
+        Optional<Movies> movie = repository.findByNameIgnoreCase(name);
         HashMap<String, Object> map = new HashMap<>();
         if(movie.isPresent()){
             map.put("Movie",movie);
-            return new ResponseEntity<>(map, HttpStatus.CREATED);
+            return new ResponseEntity<>(map, HttpStatus.NOT_FOUND);
         }else{
             map.put("Movie", "Not Found");
             logger.info("Movie with that particular name is not present in the DB");
@@ -72,7 +72,59 @@ public class MovieService {
         HashMap<String,Object> map = new HashMap<>();
         map.put("Movies", movies);
         map.put("Message", "saved");
+        logger.info("All Movies Saved");
         return new ResponseEntity<>(map, HttpStatus.CREATED);
+    }
+
+    public ResponseEntity<?> ratingRange(int rating) {
+        List<Movies> movies = repository.findByRatingGreaterThan(rating);
+        if(!movies.isEmpty()){
+            HashMap<String, Object> map = new HashMap<>();
+            map.put("Message", "Found");
+            map.put("Movie", movies);
+            return new ResponseEntity<>(map, HttpStatus.FOUND);
+        }else{
+            HashMap<String, Object> map = new HashMap<>();
+            map.put("Message", "Not Found");
+            return new ResponseEntity<>(map, HttpStatus.FOUND);
+        }
+    }
+
+    public ResponseEntity<?> update(Movies movie) {
+        HashMap<String, Object> map = new HashMap<>();
+        repository.save(movie);
+        map.put("Message", "Updated");
+        map.put("Movie",movie);
+        return new ResponseEntity<>(map, HttpStatus.CREATED);
+    }
+
+    public ResponseEntity<?> deleteMovie(int id) {
+        HashMap<String, Object> map = new HashMap<>();
+        if(repository.existsById(id)){
+            repository.deleteById(id);
+            map.put("Message","Movie deleted!");
+            return new ResponseEntity<>(map, HttpStatus.OK);
+        }else{
+            map.put("Message","No such movie found");
+            return new ResponseEntity<>(map, HttpStatus.OK);
+        }
+    }
+
+    public ResponseEntity<?> patchMovie(int id, Movies updatedMovie) {
+        Optional<Movies> optionalMovie = repository.findById(id);
+        if (!optionalMovie.isPresent()) {
+            return new ResponseEntity<>("Movie not found", HttpStatus.NOT_FOUND);
+        }
+
+        Movies movie = optionalMovie.get();
+
+        if (updatedMovie.getName() != null) movie.setName(updatedMovie.getName());
+        if (updatedMovie.getYear() != 0) movie.setYear(updatedMovie.getYear());
+        if (updatedMovie.getDescription() != null) movie.setDescription(updatedMovie.getDescription());
+        if (updatedMovie.getRating() != 0) movie.setRating(updatedMovie.getRating());
+
+        repository.save(movie);
+        return new ResponseEntity<>(movie, HttpStatus.OK);
     }
 }
 

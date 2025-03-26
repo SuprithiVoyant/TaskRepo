@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 @SpringBootApplication
 @CrossOrigin(origins = "*")
 @ComponentScan("com.ivoyant")
-
 public class Application {
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
