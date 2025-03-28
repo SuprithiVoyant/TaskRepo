@@ -9,8 +9,7 @@
       <change beforePath="$PROJECT_DIR$/springBoot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springBoot/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/controller/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/controller/MovieController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/dto/Movies.java" beforeDir="false" afterPath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/dto/Movies.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/exceptions/Exceptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/exceptions/Exceptions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/repository/MovieRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/repository/MovieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/repository/MovieRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/service/MovieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/service/MovieService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

@@ -28,8 +28,10 @@ public class MovieService {
         List<Movies> movie = repository.findAll();
         if(movie.isEmpty()){
             map.put("Movies","Nothing to show");
+            logger.info("Could not fetch records");
             return new ResponseEntity<>(map, HttpStatus.NOT_FOUND);
         }else{
+            logger.info("Getting all records!");
             return new ResponseEntity<>(movie, HttpStatus.FOUND);
         }
     }
@@ -43,14 +45,20 @@ public class MovieService {
     }
 
     public ResponseEntity<Object> fetch(int id) {
-        Optional<Movies> movie = Optional.ofNullable(repository.findById(id));
-        HashMap<String, Object> map = new HashMap<>();
-        if(movie.isPresent()){
-            logger.info("Movie found");
-            return new ResponseEntity<>(movie, HttpStatus.CREATED);
-        }else{
-            map.put("Movie", "Not Found");
-            return new ResponseEntity<>(map, HttpStatus.NOT_FOUND);
+        try {
+            Movies movie = repository.findById(id);
+            if(movie != null){
+                logger.info("Movie found");
+                return new ResponseEntity<>(movie, HttpStatus.FOUND);
+            }else{
+                logger.info("Movie not found");
+                return new ResponseEntity<>("Movie not found", HttpStatus.NOT_FOUND);
+            }
+        } catch (Exception e) {
+            logger.error("Movie not found");
+            HashMap<String, String> map = new HashMap<>();
+            map.put("Message","Movie not found");
+            return new ResponseEntity<>(map, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 
@@ -62,8 +70,7 @@ public class MovieService {
             logger.info("Movie with that particular name is not present in the DB");
             return new ResponseEntity<>(map, HttpStatus.NOT_FOUND);
         }else{
-            map.put("Movie",movie);
-            return new ResponseEntity<>(map, HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(movie, HttpStatus.NOT_FOUND);
         }
     }
 
@@ -92,7 +99,7 @@ public class MovieService {
 
     public ResponseEntity<?> update(Movies movie) {
         HashMap<String, Object> map = new HashMap<>();
-        repository.save(movie);
+        repository.update(movie);
         map.put("Message", "Updated");
         map.put("Movie",movie);
         return new ResponseEntity<>(map, HttpStatus.CREATED);
@@ -125,7 +132,7 @@ public class MovieService {
         if (updatedMovie.getDescription() != null) movie.setDescription(updatedMovie.getDescription());
         if (updatedMovie.getRating() != 0) movie.setRating(updatedMovie.getRating());
 
-        repository.save(movie);
+        repository.update(movie);
         return new ResponseEntity<>(movie, HttpStatus.OK);
     }
 }
