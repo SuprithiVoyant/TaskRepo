@@ -1,16 +1,51 @@
 package com.ivoyant.springboot.repository;
 
 import com.ivoyant.springboot.dto.Movies;
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
-import java.util.Optional;
 
 @Repository
-public interface MovieRepository extends JpaRepository<Movies, Integer> {
-    Optional<Movies> findByName(String name);
-    Optional<Movies> findByNameIgnoreCase(String name);
-    List<Movies> findByRatingGreaterThan(int rating);
+public class MovieRepository {
+
+    @Autowired
+    private JdbcTemplate jdbcTemplate;
+
+    public List<Movies> findAll() {
+        String sql = "SELECT * FROM movie_data";
+        return jdbcTemplate.query(sql, new MovieRowmapper());
+    }
+
+    public int save(Movies movie) {
+        String sql = "INSERT INTO movie_data (movie_id, name, year, rating, description) VALUES (?, ?, ?, ?, ?)";
+        return jdbcTemplate.update(sql, movie.getMovieId(), movie.getName(), movie.getYear(), movie.getRating(), movie.getDescription());
+    }
+
+    public Movies findById(int id) {
+        String sql = "SELECT * FROM movies WHERE movie_id = ?";
+        return jdbcTemplate.queryForObject(sql, new MovieRowmapper(), id);
+    }
+
+    public List<Movies> findByNameIgnoreCase(String name) {
+        String sql = "SELECT * FROM movies WHERE LOWER(name) = LOWER(?)";
+        return jdbcTemplate.query(sql, new MovieRowmapper(), name);
+    }
+
+    public List<Movies> findByRatingGreaterThan(int rating) {
+        String sql = "SELECT * FROM movies WHERE rating > ?";
+        return jdbcTemplate.query(sql, new MovieRowmapper(), rating);
+    }
+
+//    public int update(Movies movie) {
+//        String sql = "UPDATE movies SET name = ?, year = ?, rating = ?, description = ? WHERE movie_id = ?";
+//        return jdbcTemplate.update(sql, movie.getName(), movie.getYear(), movie.getRating(), movie.getDescription(), movie.getMovieId());
+//    }
+
+    public void deleteById(int id) {
+        String sql = "DELETE FROM movies WHERE movie_id = ?";
+        jdbcTemplate.update(sql, id);
+    }
 }
 

@@ -43,7 +43,7 @@ public class MovieService {
     }
 
     public ResponseEntity<Object> fetch(int id) {
-        Optional<Movies> movie = repository.findById(id);
+        Optional<Movies> movie = Optional.ofNullable(repository.findById(id));
         HashMap<String, Object> map = new HashMap<>();
         if(movie.isPresent()){
             logger.info("Movie found");
@@ -55,26 +55,26 @@ public class MovieService {
     }
 
     public ResponseEntity<Object> fetchByName(String name) {
-        Optional<Movies> movie = repository.findByNameIgnoreCase(name);
+        List<Movies> movie = repository.findByNameIgnoreCase(name);
         HashMap<String, Object> map = new HashMap<>();
-        if(movie.isPresent()){
-            map.put("Movie",movie);
-            return new ResponseEntity<>(map, HttpStatus.NOT_FOUND);
-        }else{
+        if(movie.isEmpty()){
             map.put("Movie", "Not Found");
             logger.info("Movie with that particular name is not present in the DB");
+            return new ResponseEntity<>(map, HttpStatus.NOT_FOUND);
+        }else{
+            map.put("Movie",movie);
             return new ResponseEntity<>(map, HttpStatus.NOT_FOUND);
         }
     }
 
-    public ResponseEntity<?> saveAll(List<Movies> movies) {
-        repository.saveAll(movies);
-        HashMap<String,Object> map = new HashMap<>();
-        map.put("Movies", movies);
-        map.put("Message", "saved");
-        logger.info("All Movies Saved");
-        return new ResponseEntity<>(map, HttpStatus.CREATED);
-    }
+//    public ResponseEntity<?> saveAll(List<Movies> movies) {
+//        repository.saveAll(movies);
+//        HashMap<String,Object> map = new HashMap<>();
+//        map.put("Movies", movies);
+//        map.put("Message", "saved");
+//        logger.info("All Movies Saved");
+//        return new ResponseEntity<>(map, HttpStatus.CREATED);
+//    }
 
     public ResponseEntity<?> ratingRange(int rating) {
         List<Movies> movies = repository.findByRatingGreaterThan(rating);
@@ -100,19 +100,21 @@ public class MovieService {
 
     public ResponseEntity<?> deleteMovie(int id) {
         HashMap<String, Object> map = new HashMap<>();
-        if(repository.existsById(id)){
+
+        // Check if the movie exists
+        if (repository.findById(id) != null) {
             repository.deleteById(id);
-            map.put("Message","Movie deleted!");
+            map.put("Message", "Movie deleted!");
             return new ResponseEntity<>(map, HttpStatus.OK);
-        }else{
-            map.put("Message","No such movie found");
-            return new ResponseEntity<>(map, HttpStatus.OK);
+        } else {
+            map.put("Message", "No such movie found");
+            return new ResponseEntity<>(map, HttpStatus.NOT_FOUND);
         }
     }
 
     public ResponseEntity<?> patchMovie(int id, Movies updatedMovie) {
-        Optional<Movies> optionalMovie = repository.findById(id);
-        if (!optionalMovie.isPresent()) {
+        Optional<Movies> optionalMovie = Optional.ofNullable(repository.findById(id));
+        if (optionalMovie.isEmpty()) {
             return new ResponseEntity<>("Movie not found", HttpStatus.NOT_FOUND);
         }
 

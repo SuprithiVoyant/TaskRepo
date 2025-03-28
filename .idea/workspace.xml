@@ -7,12 +7,11 @@
     <list default="true" id="7c49a494-1017-4b92-952b-ec82ee7eab7c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springBoot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springBoot/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/controller/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/controller/MovieController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/dto/Movies.java" beforeDir="false" afterPath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/dto/Movies.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/repository/MovieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/repository/MovieRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/exceptions/Exceptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/exceptions/Exceptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/repository/MovieRepository.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/service/MovieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springBoot/src/main/java/com/ivoyant/springboot/service/MovieService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springBoot/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/springBoot/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

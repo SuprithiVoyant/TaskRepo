@@ -2,7 +2,6 @@ package com.ivoyant.springboot.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.orm.ObjectOptimisticLockingFailureException;
 import org.springframework.web.HttpRequestMethodNotSupportedException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
@@ -35,10 +34,4 @@ public class Exceptions {
         return new ResponseEntity<>(map, HttpStatus.BAD_REQUEST);
     }
 
-    @ExceptionHandler(ObjectOptimisticLockingFailureException.class)
-    public ResponseEntity<?> handle500() {
-        HashMap<String, Object> map = new HashMap<>();
-        map.put("Message", "500 - Internal server error");
-        return new ResponseEntity<>(map, HttpStatus.BAD_REQUEST);
-    }
 }

@@ -34,10 +34,10 @@ public class MovieController {
         return service.fetchByName(name);
     }
 
-    @PostMapping("/movies/save")
-    public ResponseEntity<?> saveAll(@RequestBody List<Movies> movies){
-        return service.saveAll(movies);
-    }
+//    @PostMapping("/movies/save")
+//    public ResponseEntity<?> saveAll(@RequestBody List<Movies> movies){
+//        return service.saveAll(movies);
+//    }
 
     @GetMapping("/movies/ratings/{rating}")
     public ResponseEntity<?> ratingRange(@PathVariable int rating){
@@ -53,7 +53,6 @@ public class MovieController {
     public ResponseEntity<?> patchMovie(@PathVariable int id, @RequestBody Movies updatedMovie) {
         return service.patchMovie(id, updatedMovie);
     }
-
 
     @DeleteMapping("/movies/{id}")
     public ResponseEntity<?> deleteMovie(@PathVariable int id){
