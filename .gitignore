@@ -1,29 +1,61 @@
-### IntelliJ IDEA ###
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
+#############################
+# Maven
+#############################
+target/
+!.mvn/wrapper/maven-wrapper.jar
 
-### Eclipse ###
-.apt_generated
+#############################
+# IntelliJ IDEA
+#############################
+.idea/
+*.iml
+*.iws
+*.ipr
+
+#############################
+# Eclipse
+#############################
 .classpath
-.factorypath
 .project
-.settings
+.settings/
+.apt_generated
+.factorypath
 .springBeans
 .sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
 
-### NetBeans ###
+#############################
+# NetBeans
+#############################
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
 
-### VS Code ###
+#############################
+# VS Code
+#############################
 .vscode/
 
-### Mac OS ###
+#############################
+# OS/System Files
+#############################
 .DS_Store
+Thumbs.db
+
+#############################
+# Logs and Temp Files
+#############################
+*.log
+*.tmp
+*.swp
+*.bak
+
+#############################
+# Build directories (just in case)
+#############################
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+!**/src/main/**/target/
+!**/src/test/**/target/
