@@ -70,6 +70,11 @@ public class StreamAPI {
         List<Character> sorted = chSort.stream().sorted().toList();
         System.out.println("Natural Sorting : Sorting characters : "+sorted);
 
+        List<Integer> numbers = Arrays.asList(5, 10, 15, 20);
+        int sum = numbers.stream()
+                .reduce(0, (a, b) -> a + b);
+        System.out.println("Sum: " + sum);
+
 
 		/*if we ever want customized sorting, we shd be going for comparator(functional interface)
 			Method : compare(obj1, obj2):
@@ -139,13 +144,13 @@ public class StreamAPI {
         System.out.println("Max value using a single line :"+maxValC);
 
 
-        List<Integer> numbers = Arrays.asList(10,20,12,30,43);
-
-        Integer numbs = numbers.stream().max((a,b)->(Integer.compare(a, b))).get();
-        System.out.println("Max in integers :"+numbs);
-
-        Integer numbsMin = numbers.stream().min((a,b)->(Integer.compare(a, b))).get();
-        System.out.println("Min in integers :"+numbsMin);
+//        List<Integer> numbers = Arrays.asList(10,20,12,30,43);
+//
+//        Integer numbs = numbers.stream().max((a,b)->(Integer.compare(a, b))).get();
+//        System.out.println("Max in integers :"+numbs);
+//
+//        Integer numbsMin = numbers.stream().min((a,b)->(Integer.compare(a, b))).get();
+//        System.out.println("Min in integers :"+numbsMin);
     }
 
 }
